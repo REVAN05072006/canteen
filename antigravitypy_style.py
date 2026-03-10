@@ -1124,4 +1124,5 @@ if __name__ == "__main__":
     print("\n📝 Or sign up with your own email!")
     print("\n🔍 Debug: Visit http://localhost:8000/debug/users to see all users")
     print("=" * 60)
+    port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
